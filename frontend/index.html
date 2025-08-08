@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título principal de la plataforma -->
+  <title>ProductTrack - Gestión inteligente de inventario</title>
+
+  <!-- Icono personalizado -->
+  <link rel="icon" type="image/svg+xml" href="./src/assets/loguito.png" />
+
+  <!-- Descripción general del sistema -->
+  <meta name="description"
+    content="ProductTrack te ayuda a gestionar productos no perecederos de forma eficiente, con funciones inteligentes como escaneo, análisis nutricional y alertas." />
+  <meta name="author" content="Ximena & Emilia" />
+
+  <!-- Meta etiquetas para redes sociales (OG) -->
+  <meta property="og:title" content="ProductTrack - Gestión inteligente de inventario" />
+  <meta property="og:description"
+    content="Administra tu inventario de alimentos no perecederos con escaneo inteligente, estadísticas y alertas personalizadas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./src/assets/og-image-producttrack.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ProductTrack" />
+  <meta name="twitter:description" content="Tu aliado inteligente en la gestión de inventarios alimenticios." />
+  <meta name="twitter:image" content="./src/assets/og-image-producttrack.png" />
+
+  <!-- Fuente Poppins (también venía en el archivo de Lovable) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<!-- Variables de color personalizadas -->
+<style>
+  :root {
+    --background: hsl(0 0% 100%);
+    --foreground: hsl(0 0% 10%);
+    --primary: hsl(345 100% 20%);
+    --primary-foreground: hsl(0 0% 100%);
+    --card: hsl(0 0% 100%);
+    --card-foreground: hsl(0 0% 10%);
+    --border: hsl(0 0% 80%);
+    --radius: 0.5rem;
+  }
+</style>
+
+<body>
+  <div id="root"></div>
+  <div id="modal-root"></div> <!-- NECESARIO para los modales -->
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

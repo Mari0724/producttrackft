@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.producttrack-button-primary {
+  @apply bg-producttrack-olive text-white text-sm px-4 py-3 rounded-lg hover:bg-producttrack-olive/90 transition-colors;
+}
+
+.producttrack-button-danger {
+  @apply px-4 py-3 rounded-lg text-white bg-producttrack-wine hover:bg-producttrack-wine/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+}
+
+/* Estilos base */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  /* Asegura que no haya bordes blancos */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+/* Variables para modo claro */
+:root {
+  --background: 48 100% 98%;
+  /* Un beige claro */
+  --foreground: 222.2 47.4% 11.2%;
+
+  --primary: 54 89% 60%;
+  --primary-foreground: 0 0% 0%;
+
+  --secondary: 82 47% 33%;
+  --secondary-foreground: 0 0% 100%;
+
+  --accent: 82 47% 33%;
+  --accent-foreground: 0 0% 100%;
+
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 47.4% 11.2%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 47.4% 11.2%;
+
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 240 4.9% 83.9%;
+
+  /* Colores personalizados */
+  --sidebar-background: 0 0% 100%;
+  --sidebar-foreground: 222.2 47.4% 11.2%;
+  --sidebar-primary: 54 89% 60%;
+  --sidebar-primary-foreground: 0 0% 0%;
+  --sidebar-accent: 82 47% 33%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 240 5.9% 90%;
+  --sidebar-ring: 240 4.9% 83.9%;
+}
+
+/* Variables para modo oscuro */
+.dark {
+  --background: 222.2 47.4% 11.2%;
+  --foreground: 210 40% 98%;
+
+  --primary: 54 89% 60%;
+  --primary-foreground: 0 0% 0%;
+
+  --secondary: 82 47% 33%;
+  --secondary-foreground: 0 0% 100%;
+
+  --accent: 82 47% 33%;
+  --accent-foreground: 0 0% 100%;
+
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 210 40% 98%;
+
+  --popover: 222.2 47.4% 11.2%;
+  --popover-foreground: 210 40% 98%;
+
+  --card: 222.2 47.4% 11.2%;
+  --card-foreground: 210 40% 98%;
+
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 224.3 76.3% 48%;
+
+  --sidebar-background: 222.2 47.4% 11.2%;
+  --sidebar-foreground: 210 40% 98%;
+  --sidebar-primary: 54 89% 60%;
+  --sidebar-primary-foreground: 0 0% 0%;
+  --sidebar-accent: 82 47% 33%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 217.2 32.6% 17.5%;
+  --sidebar-ring: 224.3 76.3% 48%;
+}
