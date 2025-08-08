@@ -1,1 +1,1 @@
-export const url = "producttrackbik-production.up.railway.app"
+export const url = "https://producttrackbik-production.up.railway.app"
